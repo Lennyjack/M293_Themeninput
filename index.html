@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praesentation_Gruppe_2</title>
+    <link rel="stylesheet" href="gruppenarbeit.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <ul class="content">
+        <li><a href="mainpage.html">Inhalt</a></li>
+        <li><a href="#formulare">HTML-Formulare</a></li>
+        <li><a href="#input-elemente">Input-Elemente</a></li>
+        <li><a href="#daten-senden">Senden von Daten</a></li>
+        <li><a href="#navigation">Navigation </a></li>
+        <li><a href="#links">Links/Anker</a></li>
+        <li><a href="#css">CSS</a></li>
+      </ul>
+    </nav>
+
+    <!-- HTML Formulare -->
+    <section id="formulare">
+      <h2>HTML-Formulare</h2>
+      <p>
+        Formulare werden mit dem &lt;form&gt;-Tag erstellt und enthalten
+        verschiedene Eingabeelemente.
+      </p>
+      <form action="form.php" method="post" class="forms">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message"></textarea><br /><br />
+
+        <label for="password">Passwort</label>
+        <input type="password" id="Passwortfeld" name="pw" /><br />
+        <br />
+
+        <input type="submit" value="Absenden" />
+      </form>
+    </section>
+
+    <!-- Übersicht der Input-Elemente -->
+    <section id="input-elemente">
+      <h2>Übersicht der Input-Elemente</h2>
+      <ul>
+        <li>Textfelder: &lt;input type="text"&gt;</li>
+        <li>Passwortfeld: &lt;input type="password"&gt;</li>
+        <li>E-Mail: &lt;input type="email"&gt;</li>
+        <li>Checkbox: &lt;input type="checkbox"&gt;</li>
+        <li>Radiobutton: &lt;input type="radio"&gt;</li>
+        <li>Datei-Upload: &lt;input type="file"&gt;</li>
+        <li>Dropdown-Menü: &lt;select&gt;&lt;option&gt;</li>
+      </ul>
+    </section>
+
+    <!-- Daten von Formularen senden -->
+    <section id="daten-senden">
+      <h2>Daten von Formularen senden</h2>
+      <p>
+        Daten können mit den Methoden "GET" oder "POST" gesendet werden. Diese
+        werden im &lt;form&gt;-Tag definiert.
+      </p>
+      <p>Get wird dafür verwendet um daten von einem server abzurufen.</p>
+      <p>Post Dient dazu si cher daten an den server zu senden.</p>
+    </section>
+
+    <!-- Navigation -->
+    <section id="navigation">
+      <h2>Navigation umsetzen</h2>
+      <p>
+        Navigationen können mit dem &lt;nav&gt;-Tag umgesetzt werden. Ein
+        einfaches Beispiel:
+      </p>
+      <pre>
+&lt;nav&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;a href="#ziel"&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+    </pre
+      >
+    </section>
+
+    <!-- Links und Anker -->
+    <section id="links">
+      <h2>Links und Anker</h2>
+      <p>
+        Verweise in HTML werden mit dem &lt;a&gt;-Tag gesetzt. Ein Beispiel für
+        einen Anker:
+      </p>
+      <pre>
+&lt;a href="#ziel"&gt;Gehe zu Ziel&lt;/a&gt;
+&lt;div id="ziel"&gt;Hier ist das Ziel&lt;/div&gt;
+    </pre
+      >
+    </section>
+
+    <!-- CSS Grundlagen -->
+    <section id="css">
+      <h2>CSS Grundlagen</h2>
+      <h3>Was ist CSS?</h3>
+      <p>
+        CSS (Cascading Style Sheets) ist eine Sprache, die das Design von
+        HTML-Dokumenten steuert.
+      </p>
+
+      <h3>Selektoren und Syntax</h3>
+      <p>
+        Die Syntax einer CSS-Regel besteht aus einem Selektor und einer
+        Deklaration:
+      </p>
+      <pre>
+selektor {
+eigenschaft: wert;
+}
+    </pre
+      >
+
+      <h3>Implementierungsvarianten</h3>
+      <ul>
+        <li>Inline: Direkt im HTML-Element mit dem "style"-Attribut</li>
+        <li>Intern: Innerhalb eines &lt;style&gt;-Tags im HTML-Dokument</li>
+        <li>Extern: Verlinkung zu einer separaten CSS-Datei</li>
+      </ul>
+
+      <h3>CSS-Reset</h3>
+      <p>
+        Ein CSS-Reset wird verwendet, um Browser-Standardstile zu entfernen,
+        damit alle Browser von einer gleichen Basis ausgehen.
+      </p>
+
+      <h3>CSS-Einheiten</h3>
+      <ul>
+        <li>Absolute Einheiten: px, cm, mm</li>
+        <li>
+          Relative Einheiten:<br />
+          em (1em=16px)<br />
+          rem (Einheit ist relativ zur Schriftgröße)<br />
+          % (Einheit ist relativ zur Größe ihres Elternelements.)<br />
+          vw/vh (Diese Einheit ist relativ zur Breite des Ansichtsfensters)<br />
+        </li>
+      </ul>
+
+      <h3>Wie kann eine CSS-Datei validiert werden?</h3>
+      <ul>
+        <li>
+          Um eine CSS-Datei zu validieren, kann man Online-Tools wie den W3C CSS
+          Validator benutzen.
+        </li>
+        <a href="https://jigsaw.w3.org/css-validator/">W3C CSS</a>
+      </ul>
+    </section>
+  </body>
+</html>
